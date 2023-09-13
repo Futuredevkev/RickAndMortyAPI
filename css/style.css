@@ -195,6 +195,15 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 1090px) {
+  .info-pj .contaniner-info {
+    flex-direction: column;
+    background: transparent;
+  }
+  .info-pj .imagen-pj img {
+    width: 350px;
+  }
+}
 .footer-container {
   height: 200px;
   background-color: #3C3E44;
