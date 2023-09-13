@@ -201,7 +201,10 @@ body {
     background: transparent;
   }
   .info-pj .imagen-pj img {
-    width: 350px;
+    width: 300px;
+  }
+  .info-pj .datos-pj h1 {
+    font-size: 20px;
   }
 }
 .footer-container {
