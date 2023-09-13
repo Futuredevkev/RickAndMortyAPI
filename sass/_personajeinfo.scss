@@ -1,0 +1,57 @@
+.info-pj {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+    
+
+    .imagen-pj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 400px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+    }
+
+    .datos-pj {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: aquamarine;
+        }
+
+        span {
+            color: rgba(13, 135, 13, 0.764);
+            text-transform: uppercase;
+        }
+    }
+
+    .contaniner-info {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 25px;
+        width: 1000px;
+        height: auto;
+        background-color: #3C3E44;
+        border-radius: 5px;
+    }
+}

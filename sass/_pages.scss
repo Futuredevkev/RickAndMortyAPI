@@ -1,0 +1,41 @@
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    
+
+    .cont-pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+
+    #number-pages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+       
+        .number-button {
+            width: 25px;
+            padding: 6px;
+            color: teal;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+        }
+    }  
+    
+    .number-active {
+        color: cyan !important;
+    }
+        
+    }
+
+
+}

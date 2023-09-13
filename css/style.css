@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #272B33;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/gg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.nav-bar .IconSport {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-bar .IconSport h1 {
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav-bar .IconSport span {
+  color: rgb(14, 167, 14);
+}
+.nav-bar .IconSport img {
+  width: 50px;
+}
+
+.Apis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.API {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  width: 561px;
+  background-color: #3C3E44;
+}
+.API img {
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.API a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.API .container-pejo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.API .container-pejo .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.API .container-pejo .name-pejo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 50px;
+}
+.API .container-pejo .name-pejo h2 {
+  font-size: 30px;
+  color: rgba(10, 218, 218, 0.896);
+}
+.API .container-pejo .name-pejo p {
+  font-size: 15;
+  color: rgba(15, 136, 15, 0.905);
+}
+
+@media (max-width: 578px) {
+  .API {
+    justify-content: center;
+    background-color: transparent;
+    width: 450px;
+  }
+  .API .name-pejo h2 {
+    font-size: 15px !important;
+  }
+  .API .container-pejo {
+    flex-direction: column;
+  }
+}
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.pages .cont-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.pages .cont-pagination #number-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.pages .cont-pagination #number-pages .number-button {
+  width: 25px;
+  padding: 6px;
+  color: teal;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.pages .cont-pagination .number-active {
+  color: cyan !important;
+}
+
+.info-pj {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh;
+}
+.info-pj .imagen-pj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-pj .imagen-pj img {
+  width: 400px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.info-pj .datos-pj {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-pj .datos-pj h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.info-pj .datos-pj p {
+  font-size: 20px;
+  font-weight: bold;
+  color: aquamarine;
+}
+.info-pj .datos-pj span {
+  color: rgba(13, 135, 13, 0.764);
+  text-transform: uppercase;
+}
+.info-pj .contaniner-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  width: 1000px;
+  height: auto;
+  background-color: #3C3E44;
+  border-radius: 5px;
+}
+
+.footer-container {
+  height: 200px;
+  background-color: #3C3E44;
+}
+.footer-container .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+.footer-container .one span {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: aquamarine;
+}
+.footer-container .git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .git a {
+  text-decoration: none;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+@media (max-width: 578px) {
+  .git {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .git a {
+    font-size: 40px !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
