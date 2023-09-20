@@ -1,10 +1,11 @@
 
 let paginaActual = 1;
 let cantidadPaginas = 0;
+let terminoBusqueda = '';
 
-async function renderizarPersonajes(numberPage) {
+async function renderizarPersonajes(numberPage, searchTerm = "") {
   try {
-    const response = await fetch(`${URLbase}/?page=${numberPage}`);
+    const response = await fetch(`${URLbase}/?page=${numberPage}&name=${searchTerm}`);
     if (!response.ok) {
       throw new Error("Error al obtener datos de la API");
     }
@@ -73,4 +74,12 @@ window.onload = async () => {
   await renderizarPersonajes(paginaActual);
   await renderizarBotones();
   
+    // Agrega un evento de escucha al input para realizar búsquedas en tiempo real
+
+    const filtroInput = document.getElementById("filtro-personajes");
+    filtroInput.addEventListener("input", () => {
+      const searchTerm = filtroInput.value.trim();
+      terminoBusqueda = searchTerm;  // Actualiza el término de búsqueda
+      renderizarPersonajes(paginaActual, searchTerm);
+    });
 };
